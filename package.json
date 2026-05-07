@@ -4,7 +4,8 @@
   "description": "1. Prerequisites",
   "main": "index.js",
   "scripts": {
-    "setup": "npm install && npx playwright install"
+    "setup": "npm install && npx playwright install",
+     "test:ui": "playwright test --ui"
   },
   "keywords": [],
   "author": "",
