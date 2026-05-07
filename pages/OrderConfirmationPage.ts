@@ -1,8 +1,4 @@
 import { Page } from '@playwright/test';
-import { LoginPageLocators } from '../locators/loginPageLocators';
-import testData from '../testData.json';
-import { DashboardPageLocators } from '../locators/dashboardPageLocators';
-import { CartPageLocators } from '../locators/cartPageLocators';
 import { OrderConfirmationPageLocators } from '../locators/orderConfirmationPageLocators';
 
 export class OrderConfirmationPage {

@@ -1,4 +1,4 @@
-import { test, expect, APIRequestContext } from '@playwright/test';
+import { test, expect } from '@playwright/test';
 import { LoginPage } from '../../pages/LoginPage';
 import { DashboardPage } from '../../pages/DashboardPage';
 import { CartPage } from '../../pages/CartPage';
@@ -63,7 +63,7 @@ test.afterEach(async ({ page, request }) => {
   console.log('Token fetched:', token);
 
   // Use token to delete product/order via API
-  // Delete all fetched order IDs
+  // Delete all fetched order IDs for cleaning up test data
   for (const orderId of allOrderIDs) {
     const deleteUrl = `${testData.urls.deleteOrderEndpoint}/${orderId}`;
     const deleteResponse = await request.delete(deleteUrl, 

@@ -1,8 +1,4 @@
 import { expect, Page } from '@playwright/test';
-import { LoginPageLocators } from '../locators/loginPageLocators';
-import testData from '../testData.json';
-import { DashboardPageLocators } from '../locators/dashboardPageLocators';
-import { CartPageLocators } from '../locators/cartPageLocators';
 import { CheckoutPageLocators } from '../locators/checkoutPageLocators';
 
 export class CheckoutPage {
@@ -23,11 +19,6 @@ export class CheckoutPage {
     await this.page.waitForLoadState('networkidle');
     await this.locators.SelectCountryDropdownOption.click();
     await this.page.waitForLoadState('networkidle');
-    // await this.locators.SelectCountryInput.press('ArrowDown');
-    // await this.locators.SelectCountryInput.press('ArrowDown');
-    // await this.locators.SelectCountryInput.press('Enter');
-    // await this.page.waitForLoadState('networkidle');
-    // expect(await this.locators.MessageAfterAddingShippingInfo).toBeHidden();
   }
 
     async placeOrder() {    
