@@ -1,0 +1,28 @@
+{
+  "validCredentials": {
+    "email": "biplabfirst@gmail.com",
+    "password": "Festo@blr123"
+  },
+  "invalidCredentials": {
+    "email": "invalid@example.com",
+    "password": "WrongPassword123!"
+  },
+  "urls": {
+    "loginPage": "https://rahulshettyacademy.com/client",
+    "dashboard": "https://rahulshettyacademy.com/client/#/dashboard/dash",
+    "tokenEndpoint": "https://rahulshettyacademy.com/api/ecom/auth/login",
+    "deleteOrderEndpoint": "https://rahulshettyacademy.com/api/ecom/order/delete-order",
+    "createOrderEndpoint": "https://rahulshettyacademy.com/api/ecom/order/create-order"
+  },
+  "checkoutData": {
+    "country": "India"
+  },
+  "orderData": {
+    "orders": [
+      {
+        "country": "India",
+        "productOrderedId": "6960eae1c941646b7a8b3ed3"
+      }
+    ]
+  }
+}
