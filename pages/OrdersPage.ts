@@ -13,7 +13,7 @@ export class OrdersPage {
   // Methods
 
   async fetchAllOrderIDs() {
-    // Fetch all order IDs
+    await this.page.waitForLoadState('networkidle');
     const orderIDs = await this.locators.AllOrderIDs.allInnerTexts();
     return orderIDs;
   }
